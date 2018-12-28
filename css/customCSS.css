@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*NAVBAR*/
+body {
+  padding-top: 125px;
+}
+
+section{
+  clear: both;
+  margin-top: 5vh;
+}
+
+section .container{
+  padding: 2%;
+  border-radius: 25px;
+}
+
+.navbar{
+	background-color: black;
+}
+.navbar-text{
+	letter-spacing: 1px;
+	border-bottom: 1px solid #71787d;
+	
+}
+.dropdown-menu{
+	background-color: black;
+	color:aliceblue;
+}
+#logo{
+	max-width:100px;
+	height:auto;
+}
+#raumbelegung{
+	color: #71787d;
+}
+#fhallgemein{
+	color: #8cb110;
+}
+#livetour{
+	color:#00659c;
+}
+#raumeingabe{
+	color: #8cb110;
+}
+#raumliste{
+	color:#00659c;
+}
+#barcode{
+	color: #71787d;
+}
+/*NAVBAR*/
+
+/*KARUSSELL*/ 
+#Karussell .container{
+	background-color: #8cb110	
+}
+/*KARUSSELL*/
+
+/*TEAM*/
+#Team .container{
+background-color: #00659c; 
+}
+/*TEAM*/
