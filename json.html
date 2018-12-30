@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 	<!--Head-->
@@ -43,7 +42,7 @@
 						<a id="fhallgemein" class="nav-link" href="index.html">FH-Allgemein</a>
 					</li>
 					<li class="nav-item">
-						<a id="livetour" class="nav-link" href="livetour.html">Live Tour</a>
+						<a id="livetour" class="nav-link" href="#">Live Tour</a>
 					</li>
 				</ul>
 			</div>	
@@ -51,13 +50,45 @@
 		<!--Navbar Ende-->
 			
 		
-<!-- Video -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="pics/UniVideo.mp4" allowfullscreen></iframe>
-</div>
-<!-- Video Ende -->
-
-  <!-- Footer -->
+		<div class="container" id="mainArea">
+			<!-- HIER KANN JEDER INDIVIDUELL ZU ARBEITEN BEGINNEN-->
+				<div class="row">
+					<div class="col">
+						<h3 class="text-center">Raumbelegung</h3>
+					</div>
+				</div>
+				<!--Selektor befüllt mit dem Json File-->
+				<div class="row">
+					<div class="col-sm">
+						<div class="form-group">
+						    <label for="jsonSelektor">Wählen sie den Raum</label>
+						    <select class="form-control" id="jsonSelektor" onchange="getRoom()">
+						    
+						    </select>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="tester">
+					<table class="table">
+					  <thead>
+					    <tr>
+					      <th scope="col">Datum</th>
+					      <th scope="col">Von</th>
+					      <th scope="col">Bis</th>
+					      <th scope="col">Lehrfach</th>
+					      <th scope="col">Lektor</th>
+					      <th scope="col">Gruppe</th>
+					    </tr>
+					  </thead>
+					  <tbody id="listContent">
+					  	
+					  </tbody>
+					</table>
+				</div>
+			
+		</div>
+		
+		  <!-- FOOTER -->
   <footer class="container-fluid row">
     <!-- item -->
     <div class="container col-12 col-sm-6 col-lg-3">
@@ -107,12 +138,12 @@
     </div>
   </footer>
 	<!-- FOOTER Ende -->
-	
-			<!--jQuery-->
+		
+		<!--jQuery-->
 		<script src="js/jquery-3.3.1.js"></script>
 		<!--Bootstrap + Popper-->
 		<script src="js/bootstrap.bundle.js"></script>
 		<!--Custom javascript PUT CODE IN HERE-->
-		<script src="js/script.js"></script>
+		<script src="js/json.js"></script>
 	</body>	
 </html>
