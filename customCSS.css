@@ -14,7 +14,6 @@ section{
 
 section .container{
   padding: 2%;
-  border-radius: 25px;
 }
 
 .navbar{
@@ -53,15 +52,26 @@ section .container{
 }
 /*NAVBAR*/
 
+/*Welcome Bar*/
+#welcome {
+	text-align:center;
+	color: white;
+	background-color: #8cb110;
+}
+/*Welcome Bar*/
+
 /*KARUSSELL*/ 
 #Karussell .container{
-	background-color: #8cb110	
+	background-color: #71787d;
 }
 /*KARUSSELL*/
 
 /*TEAM*/
 #Team .container{
-background-color: #00659c; 
+background-color: #00659c;
+}
+#Team h2, h5{
+	text-align:center;
 }
 /*TEAM*/
 
