@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+	<!--Head-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Oliver Wondrusch,Christoph Vas,Yuliya Kalcheva">
+		<meta name="descripton" content="Erstes Semester Abschlussprojekt">
+		<title>Webtech Projekt</title>
+		<link rel="icon" type="image/png" href="pics/icon.png" >
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/customCSS.css"/>
+	</head>
+	
+	<!--Body-->	
+	<body>
+		<!--Navbar-->
+		<nav class="navbar fixed-top navbar-expand-md navbar-dark">
+			<!--Navigations Logo und Titel-->
+			<a class="navbar-brand"><img id="logo" src="pics/FhLogo.png"></a>
+			<span class="navbar-text">Webtech Projekt</span>
+			<!--Hamburger Button-->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+				<span class="navbar-toggler-icon"></span>
+  			</button>
+			
+			<!--Navbar Liste mit collapse href mit # um sie klickbar zu machen-->
+			<div class="collapse navbar-collapse navbar-right" id="navbarMenu">
+				<ul class="navbar-nav ml-auto float-right text-right pr-3">
+					<!--Link mit Dropdown menu-->
+					<li class="nav-item dropdown">
+						<a id="raumbelegung" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdownOne" href="#">Raumbelegung</a>
+						<span class="caret"></span>
+						<div class="dropdown-menu" aria-labelledby="dropdownOne">
+							<a id="raumeingabe" class="dropdown-item" href="input.html">Raumeingabe</a>
+							<a id="raumliste" class="dropdown-item" href="json.html">Raumliste</a>
+							<a id="barcode" class="dropdown-item" href="scanner.html">QR-Code</a>
+						</div>
+					</li>
+					<!--Die zwei anderen Links-->
+					<li class="nav-item">
+						<a id="fhallgemein" class="nav-link" href="index.html">FH-Allgemein</a>
+					</li>
+					<li class="nav-item">
+						<a id="livetour" class="nav-link" href="#">Live Tour</a>
+					</li>
+				</ul>
+			</div>	
+		</nav>
+		<!--Navbar Ende-->
+			
+		
+		<div class="container" id="mainArea">
+			<!-- HIER KANN JEDER INDIVIDUELL ZU ARBEITEN BEGINNEN-->	
+			<div class="row">
+				<div class="col">
+					<h3 id="upperschrift" class="text-center">Raumeingabe</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<div class="form-group">
+						<form onSubmit="return userInput()">
+						    <label for="roomInput">Bitte gewünschten Raum eingeben:</label>
+						    <input onkeyup="regValidate()" type="text" class="form-control" id="roomInput" value="" aria-describedby="inputHelp" placeholder="EDV_A2.06">
+						    <small id="inputHelp" class="form-text text-muted">Aktuell verfügbar: EDV_A2.06, EDV_A2.07, EDV_A5.08, EDV_A6.08, EDV_A6.09 EDV_A6.10</small>
+						    
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p id="validator">-</p>
+			</div>
+			<div class="row" id="tester">
+					<table class="table">
+					  <thead>
+					    <tr>
+					      <th scope="col">Datum</th>
+					      <th scope="col">Von</th>
+					      <th scope="col">Bis</th>
+					      <th scope="col">Lehrfach</th>
+					      <th scope="col">Lektor</th>
+					      <th scope="col">Gruppe</th>
+					    </tr>
+					  </thead>
+					  <tbody id="listContent">
+					  	
+					  </tbody>
+					</table>
+				</div>
+		</div>
+		
+		  <!-- FOOTER -->
+  <footer class="container-fluid row">
+    <!-- item -->
+    <div class="container col-12 col-sm-6 col-lg-3">
+      <div>
+      <h4>Soziale Netze</h4>
+      <ul class="nav flex-row flex-sm-column">
+        <li><a href="http://www.facebook.com">Facebook</a></li>
+        <li><a href="http://www.twitter.com">Twitter</a></li>
+        <li><a href="http://www.instagram.com">Instagram</a></li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- item -->
+    <div class="container col-12 col-sm-6 col-lg-3">
+      <div>
+      <h4>Kontakt</h4>
+      <ul class="nav flex-row flex-sm-column">
+        <li>Adresse</li>
+        <li><a href="http://www.technikum-wien.at/">Webpräsenz</a></li>
+        <li><a>Mail</a></li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- item -->
+    <div class="container col-12 col-sm-6 col-lg-3">
+      <div>
+      <h4>Terms of Use</h4>
+      <ul class="nav flex-row flex-sm-column">
+        <li>© Wondrusch, Vas, Kalcheva</li>
+        <li>Private Policy</li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- item -->
+    <div class="container col-12 col-sm-6 col-lg-3">
+      <div>
+      <h4>About</h4>
+      <ul class="nav flex-row flex-sm-column">
+        <li>FH Technikum Wien</li>
+        <li>Bachelor Informatik</li>
+        <li>1200 Wien</li>
+      </ul>
+    </div>
+    </div>
+  </footer>
+	<!-- FOOTER Ende -->
+		
+		<!--jQuery-->
+		<script src="js/jquery-3.3.1.js"></script>
+		<!--Bootstrap + Popper-->
+		<script src="js/bootstrap.bundle.js"></script>
+		<!--Custom javascript PUT CODE IN HERE-->
+		<script src="js/input.js"></script>
+	</body>	
+</html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*NAVBAR*/
+body {
+  padding-top: 125px;
+}
+
+section{
+  clear: both;
+  margin-top: 5vh;
+}
+
+section .container{
+  padding: 2%;
+}
+
+.navbar{
+	background-color: black;
+}
+.navbar-text{
+	letter-spacing: 1px;
+	border-bottom: 1px solid #71787d;
+	
+}
+.dropdown-menu{
+	background-color: black;
+	color:aliceblue;
+}
+#logo{
+	max-width:100px;
+	height:auto;
+}
+#raumbelegung{
+	color: #71787d;
+}
+#fhallgemein{
+	color: #8cb110;
+}
+#livetour{
+	color:#00659c;
+}
+#raumeingabe{
+	color: #8cb110;
+}
+#raumliste{
+	color:#00659c;
+}
+#barcode{
+	color: #71787d;
+}
+/*NAVBAR ENDE*/
+
+/*Welcome Bar*/
+#welcome {
+	text-align:center;
+	color: white;
+	background-color: #8cb110;
+}
+/*Welcome Bar*/
+
+/*KARUSSELL*/ 
+#Karussell .container{
+	background-color: #71787d;
+}
+/*KARUSSELL*/
+
+/*TEAM*/
+#Team .container{
+background-color: #00659c;
+}
+#Team h2, h5{
+	text-align:center;
+}
+/*TEAM*/
+
+/*JSON SELEKTOR*/
+h3{
+	margin:auto;
+	text-decoration: underline;
+}
+/*JSON SELEKTOR ENDE*/
+
+/*ROOM INPUT*/
+#validator{
+	padding-left: 3%;
+}
+
+/*QR code*/
+body, input {
+	font-size:14pt;
+}
+input, label {
+	vertical-align:middle;
+}
+.qrcode-text {
+	padding-right:1.7em; margin-right:0;
+}
+.qrcode-text-btn {
+	display:inline-block; 
+	background:url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg) 50% 50% no-repeat; height:1em; width:1.7em; margin-left:-1.7em; cursor:pointer;
+}
+.qrcode-text-btn > input[type=file] {
+	position:absolute; overflow:hidden; 
+	width:1px; 
+	height:1px; 
+	opacity:0;
+}
+
+/*FOOTER*/
+footer{
+  background-color: black;
+  
+}
+
+footer .container div{
+  
+  margin: 5%;
+  border-left: 2px solid #71787d;
+}
+
+footer .container .nav li, footer .container h4{
+  margin-left: 2%;
+  color: #71787d;
+}
+
+footer .container .nav li a{
+  color: #71787d;
+}
+
+@media (max-width: 576px) {
+   footer .container .nav li{
+     color: #71787d;
+   }
+}
