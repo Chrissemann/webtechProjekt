@@ -1,0 +1,144 @@
+body{
+	background-color: beige;
+}
+nav{
+	background-color: #34409C;
+}
+main{
+	background-color: white;
+}
+header{
+	background-color: white;
+	padding-top: 10%;
+	border-bottom: 1px solid black;
+}
+#logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#welcome{
+	font-size:4vw;
+	letter-spacing: 0.5em;
+	text-align: center;	
+}
+#news{
+	padding-top: 5%;
+}
+#news h2{
+	text-align: center;
+}
+section{
+	padding:5%;
+}
+#project_wrapper{
+	background-image: url(../pics/wallpaper.jpg);
+    padding:5%;  	
+}
+#project{
+	background-color: white;
+	border-radius: 25px;
+}
+#project img{
+	margin:3%;
+}
+#team{
+	border-bottom: 1px solid black;
+}
+#face1{
+	border-radius: 25px;
+}
+#face2{
+	border-radius: 25px;
+}
+#face3{
+	border-radius: 25px;
+}
+#kontakt{
+	padding: 2%;
+}
+input{
+	width:80%;
+}
+textarea{
+	width:80%;
+}
+
+#submitbutton{
+	width:20%;
+}
+
+/*FOOTER*/
+#footer_wrapper{
+	margin:0;
+	background-color: #7C89E8;
+}
+footer{
+  padding: 0;
+  margin: 0;
+}
+footer .container div{
+  margin: 15px;
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+footer .container .nav li, footer .container h4{
+  margin-left: 10px;
+}
+footer .container .nav li a{
+  color: blue;
+}
+/*MediaQ*/
+@media (max-width: 576px) {
+   footer .container .nav li{
+     border-right: 0.5px solid black;
+     padding-right: 5px;
+     color: black;
+   }
+}
+
+.navbar-toggler-icon{
+	background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+
+.carousel-inner > .carousel-item > img,
+.carousel-inner > .carousel-item > a > img {
+  width: 30%;
+  margin-left: 35%;
+}
+.carousel-inner {
+   margin-bottom:50px;
+}
+.carousel-indicators li {
+  
+  text-align: top;	
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-indicators .active{
+    background-color: #f00;
+}
+.carousel-inner h3{
+	margin-top: 2%;
+	font-size:1.5vw;
+	text-decoration: underline;
+	text-align: center;
+	
+}
+
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+

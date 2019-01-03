@@ -15,7 +15,7 @@
 	
 	<!--Body-->	
 	<body>
-		<!--Navbar-->
+		<!--NAVBAR-->
 		<nav class="navbar fixed-top navbar-expand-md navbar-dark">
 			<!--Navigations Logo und Titel-->
 			<a class="navbar-brand"><img id="logo" src="pics/FhLogo.png"></a>
@@ -29,6 +29,14 @@
 			<div class="collapse navbar-collapse navbar-right" id="navbarMenu">
 				<ul class="navbar-nav ml-auto float-right text-right pr-3">
 					<!--Link mit Dropdown menu-->
+
+					<!--Die zwei anderen Links-->
+					<li class="nav-item">
+						<a id="fhallgemein" class="nav-link" href="index.html">FH-Allgemein</a>
+					</li>
+					<li class="nav-item">
+						<a id="livetour" class="nav-link" href="livetour.html">Live Tour</a>
+					</li>
 					<li class="nav-item dropdown">
 						<a id="raumbelegung" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdownOne" href="#">Raumbelegung</a>
 						<span class="caret"></span>
@@ -37,13 +45,6 @@
 							<a id="raumliste" class="dropdown-item" href="json.html">Raumliste</a>
 							<a id="barcode" class="dropdown-item" href="scanner.html">QR-Code</a>
 						</div>
-					</li>
-					<!--Die zwei anderen Links-->
-					<li class="nav-item">
-						<a id="fhallgemein" class="nav-link" href="index.html">FH-Allgemein</a>
-					</li>
-					<li class="nav-item">
-						<a id="livetour" class="nav-link" href="livetour.html">Live Tour</a>
 					</li>
 				</ul>
 			</div>	
@@ -76,7 +77,7 @@
       <div>
       <h4>Kontakt</h4>
       <ul class="nav flex-row flex-sm-column">
-        <li>Adresse</li>
+        <li><a href="index.html#map">Adresse</a></li>
         <li><a href="http://www.technikum-wien.at/">Webpräsenz</a></li>
         <li><a>Mail</a></li>
       </ul>
